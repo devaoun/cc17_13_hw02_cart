@@ -15,7 +15,8 @@ nav {
 }
 
 html {
-    background-color: gray;
+    /* background-color: ; */
+    background-image: url(https://i.pinimg.com/originals/7f/66/4f/7f664f83ecae1bbe1f82092c159f43e4.jpg) ;
     cursor: default;
 }
 
@@ -129,9 +130,7 @@ body {
     font-family: "Ubuntu", monospace;
     font-weight: 900;
     font-size: 16px;
-    color: #707070;
-    /* background-color: #faf5f5; */
-    background-color: #edeaea;
+    background-color: rgb(248, 247, 247);
     margin: auto;
     margin-top: 55px;
     width: 1000px;
