@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: none !important; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+html {
+    background-color: gray;
+    cursor: default;
+}
+
+/* --------------------------------------------------------------------------------:left */
+
+nav .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+    height: 100%;
+    width: 300px;
+    gap: 10px;
+
+    /* border: 1px solid; */
+}
+
+.cart-logo {
+    cursor: pointer;
+}
+
+.job-name {
+    cursor: pointer;
+}
+
+.job-name span {
+    font-weight: 600;
+    color: skyblue;
+}
+
+/* ---------------------------------------------------------center */
+nav .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 100%;
+    gap: 30px;
+
+    /* border: 1px dashed; */
+}
+
+nav .about-us:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+nav .fastcart:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+nav .profile:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+/* ----------------------------------------------------------------right */
+nav .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-right: 60px;
+    height: 100%;
+    width: 300px;
+    gap: 30px;
+
+
+    /* border: 1px solid; */
+}
+
+.right .search-icon {
+    cursor: pointer;
+}
+
+.right .cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.right .cart-noti {
+    position: absolute;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    top: -2px;
+    right: -4px;
+}
+
+.right .login:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.right .sign-up:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------body */
+body {
+    font-family: "Ubuntu", monospace;
+    font-weight: 900;
+    font-size: 16px;
+    color: #707070;
+    /* background-color: #faf5f5; */
+    background-color: #edeaea;
+    margin: auto;
+    margin-top: 55px;
+    width: 1000px;
+    height: 600px;
+    border: none;
+    box-shadow: 0px 0px 1px 1px skyblue;
+}
+
+.my-cart {
+    /* border: 1px solid; */
+    position: relative;
+    /* color: black; */
+    color: black;
+    height: 15%;
+    font-size: 30px;
+    padding-left: 90px;
+    align-content: end;
+}
+
+/* -----------------------------------------------------------order section */
+
+.order-section {
+    /* border:1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    margin-top: 8px;
+    height: 65%;
+}
+
+/* ------------------------------left box */
+.left-box {
+    /* border:1px dashed; */
+    height: 90%;
+    width: 40%;
+}
+
+.left-box1 {
+    /* border:1px dashed; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    background-color: white;
+    gap: 10px;
+}
+
+.bin-button {
+    border: 2px solid red;
+    position: absolute;
+    left: 35px;
+    display: flex;
+    border-radius: 50%;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.product-picture {
+    border: 1px solid #dadada;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.product-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* -------------------////////product-info */
+.product-info {
+    /* border: 1px dashed; */
+    height: 100px;
+    width: 120px;
+}
+
+.product-name {
+    /* border: 1px dashed; */
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: smaller;
+}
+
+.product-selector {
+    /* border: 1px dashed; */
+    display: flex;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100%;
+    
+}
+
+.product-num {
+    /* border: 1px dashed; */
+    width: 6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2px;
+}
+
+.count-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-size: 8px;
+    color: #eeeaea;
+    background-color: #eeeaea;
+}
+
+.left-box1 .count-num:nth-child(1) {
+    background-color: aqua;
+    color: white;
+}
+
+.left-box2 .count-num:nth-child(1),.left-box2 .count-num:nth-child(2),.left-box2 .count-num:nth-child(3) {
+    background-color: aqua;
+    color: white;
+}
+
+.count-num:hover{
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+}
+
+.product-size {
+    /* border: 1px dashed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-size select {
+    outline: none;
+    border: none;
+    background-color: #eeeaea;
+    height: 100%;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.product-price {
+    /* border: 1px dashed; */
+    font-size: smaller;
+    width: 100%;
+}
+
+
+
+.left-box2 {
+    /* border:1px dashed; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    background-color: white;
+    gap: 10px;
+}
+
+/* --------------------------------right box */
+.right-box {
+    /* border:1px dashed; */
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 40%;
+}
+
+.right-box1 {
+    /* border: 1px solid rgb(224, 222, 222); */
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    width: fit-content;
+    width: 90%;
+    height: 80%;
+}
+
+.order-info .text {
+    /* border: 1px dashed; */
+    color: black;
+}
+
+.sub-total {
+    /* border: 1px dashed; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion-code {
+    /* border: 1px dashed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.promotion-code input {
+    height: 60%;
+    border-radius: 5px;
+    width: 55%;
+    font-size: 11px;
+    padding-inline-start: 20px;
+    outline: none;
+    border: 1px solid rgb(226, 225, 225);
+}
+
+.promotion-code button {
+    height: 60%;
+    width: 25%;
+    color: aqua;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid aqua;
+    cursor: pointer;
+}
+
+.promotion-code button:hover {
+    background-color: aqua;
+    color: white;
+}
+
+.promotion-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-box hr {
+    margin-inline: auto;
+    border-color:white ;
+    outline: none;
+    width: 90%;
+}
+
+.total-box {
+    margin-top: 10px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.total-info {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.total-info .text {
+    /* border: 1px dashed; */
+    font-weight: 300;
+}
+
+.total-info .price {
+    /* border: 1px dashed; */
+    font-size: 1.5rem;
+    color: aqua;
+}
+
+.login-button {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.total-box button {
+    width: 90%;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    font-weight: 700;
+}
+
+.total-box button:hover {
+    cursor: pointer;
+    color: white;
+}
